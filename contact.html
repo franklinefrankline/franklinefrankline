@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:skyblue;
+        }
+
+        /* Navigation */
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 90px;
+            background:whitesmoke;
+            box-shadow:0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:35px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:black;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:blue;
+        }
+
+        nav button{
+            padding:10px 20px;
+            border:none;
+            background:green;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        nav button:hover{
+            background:darkgreen;
+        }
+
+        /* Contact Information */
+        .cont{
+            text-align:center;
+            margin-top:40px;
+        }
+
+        .cont h2{
+            margin-bottom:20px;
+            color:darkblue;
+        }
+
+        .cont h3{
+            margin:10px 0;
+        }
+
+        /* Contact Form */
+        .con-box{
+            width:450px;
+            background:white;
+            margin:40px auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .con-box h2{
+            text-align:center;
+            color:blue;
+            margin-bottom:20px;
+        }
+
+        .con-box label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        .con-box input,
+        .con-box textarea{
+            width:100%;
+            padding:10px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        .con-box textarea{
+            resize:vertical;
+            height:120px;
+        }
+
+        .con-box button{
+            width:100%;
+            padding:12px;
+            border:none;
+            background:green;
+            color:white;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .con-box button:hover{
+            background:darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div id="logo-icon">
+            <img src="logo.jpeg" alt="Logo" width="60">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <button>Login</button>
+    </nav>
+
+    <!-- Contact Details -->
+    <div class="cont">
+        <h2>Contact Us</h2>
+        <h3>📍 Address: Coimbatore</h3>
+        <h3>📞 Phone Number: +91 8765890361</h3>
+        <h3>📧 Email: frankline@gmail.com</h3>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="con-box" action="#" method="post">
+        <h2>Contact Form</h2>
+
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
+
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <label for="subject">Subject</label>
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+            required
+        >
+
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</body>
+</html>

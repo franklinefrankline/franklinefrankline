@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <style>
+        body{
+            background:rgb(16, 47, 95);
+        }
+       
+        .login-box{
+            width: 500px;
+            height: auto;
+            background-color:white;
+            text-align: center;
+            margin-left: 30%;
+            border-radius:0px;
+        }
+        #lo{
+            color: blue;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .but{
+            margin-top:20px;
+            display: inline;
+            text-decoration: none;
+        }
+        nav ul li:hover{
+    color:blue;
+    cursor:pointer;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 90px;
+    background:whitesmoke;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+    margin:0;
+    padding:0;
+}
+
+nav button{
+    padding:10px 20px;
+    border:none;
+    background-color:green;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav button:hover{
+    background-color:darkgreen;
+}
+.enter{
+    display: inline-block;
+}
+    </style>
+    <nav>
+    <div id="logo-icon">
+    <img src="logo.jpeg" alt="Logo" width="60">
+</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    
+</nav>
+    <div class="login-box">
+        <h2 style="color: blue;">Sign Up</h2>
+
+        <a><h3 class="enter">First Name:</h3><input placeholder="First Name"></a><br>
+
+        <a><h3 class="enter">Last Name:</h3><input placeholder="Last Name"></a><br>
+
+        <a><h3 class="enter" >Email:</h3><input placeholder="Email" type="email"></a><br>
+
+        <a><h3 class="enter">Phone Number:</h3><input placeholder=" Mobile number"></a><br>
+
+        <a><h3 class="enter">Password:</h3><input placeholder="Password" type="password"><br></a>
+
+        <a href="login.html"><button class="but" >CREATE ACCOUNT</button></a>
+        
+        <p>Alreay have an account?<a href="login.html" id="lo">Login</a></p>
+
+        
+
+    </div>
+    
+</body>
+</html>
